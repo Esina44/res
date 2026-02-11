@@ -11,7 +11,6 @@ export default function Home() {
       </div>
       <AboutSection />
 
-      {/* CTA Section */}
       <section
         className="section-padding relative overflow-hidden"
         style={{ backgroundColor: "var(--primary)", color: "var(--secondary)" }}
@@ -26,7 +25,7 @@ export default function Home() {
           </p>
           <a
             href="/reservation"
-            className="inline-block py-4 px-10  text-white rounded-full font-bold hover:scale-105 transition-transform duration-300"
+            className="inline-block py-4 px-10 rounded-full font-bold hover:scale-105 transition-transform duration-300"
           >
             RESERVE YOUR TABLE
           </a>

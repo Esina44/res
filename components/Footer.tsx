@@ -11,7 +11,7 @@ export default function Footer() {
       }}
     >
       <div className="container">
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
             <Link
               href="/"
@@ -66,21 +66,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div
-          style={{
-            marginTop: "60px",
-            paddingTop: "30px",
-            borderTop: "1px solid var(--glass-border)",
-            textAlign: "center",
-            color: "var(--text-muted)",
-            fontSize: "14px",
-          }}
-        >
-          <p>
-            © {new Date().getFullYear()} Loyal Platter. Created with passion for
-            exquisite taste.
-          </p>
-        </div>
+        <p className="text-center text-xs text-gray-500">
+          © {new Date().getFullYear()} Loyal Platter. Created with passion for
+          exquisite taste.
+        </p>
       </div>
     </footer>
   );

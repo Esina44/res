@@ -22,9 +22,9 @@ export default function Hero() {
           <span className="premium-gradient">Tells a Story</span>
         </h1>
         <p className="text-center max-w-2xl mx-auto text-muted text-lg mb-10">
-          Indulge in a culinary journey crafted by Michelin-starred chefs. Loyal
-          Platter offers an atmosphere of sophistication and a menu that
-          redefines luxury.
+          At Loyal Platter, every dish is a masterpiece crafted by
+          Michelin-starred chefs. Experience refined luxury, elegant ambiance,
+          and a culinary journey designed to delight every sense.
         </p>
         <div className="flex justify-center gap-6">
           <a href="/menu" className="btn-primary">
