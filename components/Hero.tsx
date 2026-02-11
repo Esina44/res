@@ -40,7 +40,6 @@ export default function Hero() {
         <span className="text-xs uppercase tracking-widest mb-2 text-muted">
           Scroll
         </span>
-        <div className="w-[1px] h-20 bg-gradient-to-b from-[var(--primary)] to-transparent" />
       </div>
     </section>
   );

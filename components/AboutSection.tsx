@@ -16,9 +16,7 @@ export default function AboutSection() {
             <div className="absolute -bottom-10 -right-10 w-40 h-40 border-r-2 border-b-2 border-primary z-0" />
 
             <div className="absolute bottom-10 -left-16 glass-card p-8 z-20 hidden lg:block">
-              <h3 className="text-4xl font-serif text-primary mb-1">
-                15+
-              </h3>
+              <h3 className="text-4xl font-serif text-primary mb-1">15+</h3>
               <p className="text-xs uppercase tracking-widest">
                 Years of Excellence
               </p>
@@ -48,17 +46,13 @@ export default function AboutSection() {
                 <h4 className="text-primary font-serif text-2xl mb-1">
                   Authentic
                 </h4>
-                <p className="text-sm text-muted">
-                  Source from local farms
-                </p>
+                <p className="text-sm text-muted">Source from local farms</p>
               </div>
               <div>
                 <h4 className="text-primary font-serif text-2xl mb-1">
                   Exquisite
                 </h4>
-                <p className="text-sm text-muted">
-                  Masterfully prepared
-                </p>
+                <p className="text-sm text-muted">Masterfully prepared</p>
               </div>
             </div>
           </div>
