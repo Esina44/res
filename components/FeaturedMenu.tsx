@@ -29,8 +29,8 @@ export default function FeaturedMenu() {
   return (
     <section className="section-padding bg-[var(--background)]">
       <div className="container">
-        <div className="text-center mb-16">
-          <h4 className="uppercase tracking-widest text-[var(--primary)] mb-2">
+        <div className="text-center mb-16 px-4">
+          <h4 className="uppercase tracking-widest text-primary mb-2">
             Our Selection
           </h4>
           <h2 className="text-4xl md:text-5xl font-serif">Signature Dishes</h2>
@@ -54,11 +54,11 @@ export default function FeaturedMenu() {
               <div className="p-8">
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-xl font-serif">{dish.name}</h3>
-                  <span className="text-[var(--primary)] font-bold">
+                  <span className="text-primary font-bold">
                     {dish.price}
                   </span>
                 </div>
-                <p className="text-[var(--text-muted)] text-sm leading-relaxed">
+                <p className="text-muted text-sm leading-relaxed">
                   {dish.description}
                 </p>
               </div>

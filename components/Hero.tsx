@@ -10,21 +10,18 @@ export default function Hero() {
         }}
       />
 
-      <div className="container relative z-10 text-center">
+      <div className="relative z-10 flex flex-col items-center text-center w-full px-4">
         <h4
-          className="uppercase tracking-widest text-[var(--primary)] mb-6 animate-fadeIn"
+          className="uppercase tracking-widest text-primary mb-6 animate-fadeIn"
           style={{ fontSize: "14px", fontWeight: "bold" }}
         >
           FINE DINING EXPERIENCE
         </h4>
-        <h1 className="text-6xl md:text-8xl font-serif mb-8 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-serif mb-10 leading-tight">
           Where Every Flavor <br />
           <span className="premium-gradient">Tells a Story</span>
         </h1>
-        <p
-          className="max-w-2xl mx-auto text-[var(--text-muted)] text-lg mb-12"
-          style={{ lineHeight: "1.8" }}
-        >
+        <p className="text-center max-w-2xl mx-auto text-muted text-lg mb-10">
           Indulge in a culinary journey crafted by Michelin-starred chefs. Loyal
           Platter offers an atmosphere of sophistication and a menu that
           redefines luxury.
@@ -40,7 +37,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
-        <span className="text-xs uppercase tracking-widest mb-2 text-[var(--text-muted)]">
+        <span className="text-xs uppercase tracking-widest mb-2 text-muted">
           Scroll
         </span>
         <div className="w-[1px] h-20 bg-gradient-to-b from-[var(--primary)] to-transparent" />

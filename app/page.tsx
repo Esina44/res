@@ -20,7 +20,7 @@ export default function Home() {
           <h2 className="text-5xl md:text-6xl font-serif mb-8">
             Ready for an Unforgettable <br /> Dining Experience?
           </h2>
-          <p className="text-lg mb-10 opacity-90 max-w-2xl mx-auto">
+          <p className="text-center text-lg opacity-90 max-w-2xl mx-auto mb-10">
             Join us tonight and discover why Loyal Platter is the preferred
             choice for gourmets and food enthusiasts alike.
           </p>
