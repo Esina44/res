@@ -120,11 +120,11 @@ const MenuPage = () => {
       <section className="relative py-16 md:py-24 border-b border-white/5 mb-6">
         <div className="container px-6 text-center animate-fadeIn">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-[1px] w-8 bg-[#c5a059]/50"></div>
+            <div className=" w-8 bg-[#c5a059]/50"></div>
             <span className="text-[#c5a059] uppercase tracking-[0.4em] text-[10px] font-bold">
               Exclusive Selection
             </span>
-            <div className="h-[1px] w-8 bg-[#c5a059]/50"></div>
+            <div className=" w-8 bg-[#c5a059]/50"></div>
           </div>
           <h1 className="text-6xl md:text-8xl font-serif tracking-tighter mb-6">
             Our <span className="text-[#c5a059] italic">Menu</span>

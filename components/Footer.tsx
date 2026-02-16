@@ -10,9 +10,9 @@ export default function Footer() {
         borderTop: "1px solid var(--glass-border)",
       }}
     >
-      <div className="container">
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
-          <div>
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div className="text-center md:text-left">
             <Link
               href="/"
               className="text-3xl font-bold font-serif tracking-wider"
@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="text-center md:text-left">
             <h4
               className="font-serif uppercase tracking-widest"
               style={{ marginBottom: "25px", color: "var(--primary)" }}
@@ -49,7 +49,7 @@ export default function Footer() {
             <p style={{ color: "var(--text-muted)" }}>reservations@loyal.com</p>
           </div>
 
-          <div style={{ textAlign: "right" }}>
+          <div className="text-center md:text-right">
             <h4
               className="font-serif uppercase tracking-widest"
               style={{ marginBottom: "25px", color: "var(--primary)" }}
