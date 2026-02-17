@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left ml-20">
             <h4 className="font-serif uppercase tracking-widest text-[#c5a059] mb-6">
               Contact Information
             </h4>

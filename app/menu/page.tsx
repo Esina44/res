@@ -137,7 +137,7 @@ const MenuPage = () => {
         </div>
       </section>
 
-      <div className="sticky top-0 z-40 backdrop-blur-xl border-b  py-6 mb-6">
+      <div className="sticky top-0 z-40 backdrop-blur-xl border-b text-center  py-6 mb-6">
         <div className="container mx-auto  px-6">
           <CategoryTabs
             categories={categories}
