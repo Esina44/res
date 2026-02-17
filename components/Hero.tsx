@@ -10,14 +10,14 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center text-center w-full px-4">
+      <div className="relative z-10 flex flex-col items-center text-center w-full">
         <h4
           className="uppercase tracking-widest text-primary mb-6 animate-fadeIn"
           style={{ fontSize: "14px", fontWeight: "bold" }}
         >
           FINE DINING EXPERIENCE
         </h4>
-        <h1 className="text-6xl md:text-8xl font-serif mb-10 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-serif mb-10 text-white leading-tight">
           Where Every Flavor <br />
           <span className="premium-gradient">Tells a Story</span>
         </h1>
@@ -26,11 +26,27 @@ export default function Hero() {
           Michelin-starred chefs. Experience refined luxury, elegant ambiance,
           and a culinary journey designed to delight every sense.
         </p>
-        <div className="flex justify-center gap-6">
-          <a href="/menu" className="btn-primary">
+        <div className="flex justify-center gap-6 text-white">
+          <a
+            href="/menu"
+            className="inline-block px-12 py-4 rounded-full font-semibold tracking-wide
+                       border border-[#c5a059] text-[#c5a059]
+                       transition-all duration-300
+                       hover:bg-[#c5a059] hover:text-black
+                       hover:shadow-[0_0_30px_rgba(197,160,89,0.35)]
+                       active:scale-95"
+          >
             EXPLORE MENU
           </a>
-          <a href="/reservation" className="btn-outline">
+          <a
+            href="/reservation"
+            className="inline-block px-12 py-4 rounded-full font-semibold tracking-wide
+                       border border-[#c5a059] text-[#c5a059]
+                       transition-all duration-300
+                       hover:bg-[#c5a059] hover:text-black
+                       hover:shadow-[0_0_30px_rgba(197,160,89,0.35)]
+                       active:scale-95"
+          >
             BOOK A TABLE
           </a>
         </div>

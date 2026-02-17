@@ -16,11 +16,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    document.body.classList.toggle("overflow-hidden", isMenuOpen);
   }, [isMenuOpen]);
 
   const navLinks = [
@@ -33,13 +29,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "top-0 pt-3 pb-3 bg-background shadow-lg"
-            : "top-5 pt-3 pb-6 bg-transparent"
+        className={`fixed top-0 left-0 w-full z-[100] text-white transition-all duration-300 ${
+          isScrolled ? "bg-black/90 backdrop-blur-md shadow-lg" : "bg-black"
         }`}
       >
-        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center p-6">
           <Link
             href="/"
             className="text-4xl font-bold font-serif tracking-wider"
@@ -54,7 +48,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="hover:text-[var(--primary)] transition-colors text-base font-medium tracking-widest uppercase"
+                className="transition-colors text-base font-medium tracking-widest uppercase"
               >
                 {link.name}
               </Link>
@@ -62,16 +56,16 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-8">
-            <div className="hidden md:flex items-center gap-8">
+            <div className="border-t border-white/10 hidden md:block">
               <Link
                 href="/reservation"
-                className="btn-primary py-3 px-8 text-base"
+                className="block w-full px-5 py-3 text-center bg-[#c5a059] text-black  rounded-xl font-bold text-lg hover:bg-[#d4af37] transition-colors"
               >
                 RESERVE NOW
               </Link>
             </div>
 
-            {/* Mobile Toggle Button (Visible only on small screens) */}
+            {/* Mobile Toggle */}
             <button
               className="md:hidden text-white p-2"
               onClick={() => setIsMenuOpen(true)}
@@ -96,7 +90,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Sidebar Overlay */}
+      {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] transition-opacity duration-300 md:hidden ${
           isMenuOpen
@@ -106,13 +100,12 @@ export default function Navbar() {
         onClick={() => setIsMenuOpen(false)}
       />
 
-      {/* Mobile Sidebar Drawer */}
+      {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-[280px] bg-[#0c0c0c] z-[70] shadow-2xl transition-transform duration-500 ease-in-out md:hidden flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-[280px] bg-black z-[70] shadow-2xl transition-transform duration-500 ease-in-out md:hidden flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Cross button at the top right of sidebar */}
         <div className="p-6 flex justify-end">
           <button
             className="text-white p-2 hover:bg-white/10 rounded-full transition-colors"
@@ -147,6 +140,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+
           <div className="mt-4 pt-8 border-t border-white/10">
             <Link
               href="/reservation"
@@ -158,7 +152,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Decorative elements */}
         <div className="mt-auto p-8 text-center border-t border-white/10 opacity-50">
           <p className="text-white text-xs tracking-widest uppercase mb-4">
             Established 1998

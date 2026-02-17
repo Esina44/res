@@ -116,9 +116,9 @@ const MenuPage = () => {
       : menuItems.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-[#0c0c0c] text-white selection:bg-[#c5a059]/30">
-      <section className="relative py-16 md:py-24 border-b border-white/5 mb-6">
-        <div className="container px-6 text-center animate-fadeIn">
+    <div className="min-h-screen mx-auto bg-black mt-10 text-white ">
+      <section className="relative py-16 md:py-24 border-b border-white/5 ">
+        <div className="container px-6 mx-auto text-center animate-fadeIn">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className=" w-8 bg-[#c5a059]/50"></div>
             <span className="text-[#c5a059] uppercase tracking-[0.4em] text-[10px] font-bold">
@@ -138,7 +138,7 @@ const MenuPage = () => {
       </section>
 
       <div className="sticky top-0 z-40 backdrop-blur-xl border-b  py-6 mb-6">
-        <div className="container px-6">
+        <div className="container mx-auto  px-6">
           <CategoryTabs
             categories={categories}
             activeCategory={activeCategory}
@@ -149,7 +149,7 @@ const MenuPage = () => {
 
       {/* Grid Content */}
       <section className="py-20 lg:py-24 mb-6">
-        <div className="container px-6">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-14">
             {filteredItems.map((item, idx) => (
               <div
@@ -172,31 +172,29 @@ const MenuPage = () => {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 mb-6">
-        <div className="container px-10">
-          <div className="max-w-4xl mx-auto text-center border p-12 md:p-20 rounded-[2.5rem]">
-            <h2 className="text-4xl md:text-5xl font-serif mb-8 text-white">
-              Reserved Your Experience?
-            </h2>
-            <p className="text-neutral-400 text-base md:text-lg mb-12 font-light opacity-70">
-              Join us for an unforgettable evening. Secure your table today and
-              let us take you on a journey of pure gastronomic delight.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Button
-                onClick={() => (window.location.href = "/reservation")}
-                className="px-12 text-amber-200"
-              >
-                RESERVE NOW
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => (window.location.href = "/contact")}
-                className="px-12"
-              >
-                TALK TO US
-              </Button>
-            </div>
+      <section className="bg-[#c5a059] text-black md:py-32 ">
+        <div className="max-w-4xl mx-auto text-center border p-12 md:p-20 rounded-[2.5rem]">
+          <h2 className="text-4xl md:text-5xl font-serif mb-8 text-black font-bold">
+            Reserved Your Experience?
+          </h2>
+          <p className=" text-base md:text-lg mb-12 font-light opacity-70 italic">
+            Join us for an unforgettable evening. Secure your table today and
+            let us take you on a journey of pure gastronomic delight.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 ">
+            <Button
+              onClick={() => (window.location.href = "/reservation")}
+              className="px-12 text-amber-200 cursor-pointer"
+            >
+              RESERVE NOW
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => (window.location.href = "/contact")}
+              className="px-12 text-black border border-black cursor-pointer"
+            >
+              TALK TO US
+            </Button>
           </div>
         </div>
       </section>

@@ -2,74 +2,60 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer
-      className="footer"
-      style={{
-        padding: "80px 0 40px",
-        backgroundColor: "#080808",
-        borderTop: "1px solid var(--glass-border)",
-      }}
-    >
-      <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+    <footer className="bg-black text-white border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Brand */}
           <div className="text-center md:text-left">
             <Link
               href="/"
               className="text-3xl font-bold font-serif tracking-wider"
             >
-              <span className="text-[var(--primary)]">Loyal</span>
-              <span className="text-white"> Platter</span>
+              <span className="text-[#c5a059]">Loyal</span>
+              <span> Platter</span>
             </Link>
-            <p
-              style={{
-                marginTop: "20px",
-                color: "var(--text-muted)",
-                lineHeight: "1.8",
-              }}
-            >
+
+            <p className="mt-6 text-neutral-400 leading-relaxed max-w-sm mx-auto md:mx-0">
               Experience the pinnacle of fine dining where culinary artistry
               meets refined ambiance. We craft unforgettable moments through
               flavor and elegance.
             </p>
           </div>
 
+          {/* Contact */}
           <div className="text-center md:text-left">
-            <h4
-              className="font-serif uppercase tracking-widest"
-              style={{ marginBottom: "25px", color: "var(--primary)" }}
-            >
+            <h4 className="font-serif uppercase tracking-widest text-[#c5a059] mb-6">
               Contact Information
             </h4>
-            <p style={{ color: "var(--text-muted)", marginBottom: "10px" }}>
-              123 Gastronomy Lane, Culinary City
-            </p>
-            <p style={{ color: "var(--text-muted)", marginBottom: "10px" }}>
-              +1 (555) 789-1234
-            </p>
-            <p style={{ color: "var(--text-muted)" }}>reservations@loyal.com</p>
+
+            <div className="space-y-3 text-neutral-400">
+              <p>123 Gastronomy Lane, Culinary City</p>
+              <p>+1 (555) 789-1234</p>
+              <p>reservations@loyal.com</p>
+            </div>
           </div>
 
+          {/* Hours */}
           <div className="text-center md:text-right">
-            <h4
-              className="font-serif uppercase tracking-widest"
-              style={{ marginBottom: "25px", color: "var(--primary)" }}
-            >
+            <h4 className="font-serif uppercase tracking-widest text-[#c5a059] mb-6">
               Opening Hours
             </h4>
-            <p style={{ color: "var(--text-muted)", marginBottom: "10px" }}>
-              Mon - Thu: 5 PM - 10 PM
-            </p>
-            <p style={{ color: "var(--text-muted)", marginBottom: "10px" }}>
-              Fri - Sat: 5 PM - 11 PM
-            </p>
-            <p style={{ color: "var(--text-muted)" }}>Sunday: 11 AM - 9 PM</p>
+
+            <div className="space-y-3 text-neutral-400">
+              <p>Mon – Thu: 5 PM – 10 PM</p>
+              <p>Fri – Sat: 5 PM – 11 PM</p>
+              <p>Sunday: 11 AM – 9 PM</p>
+            </div>
           </div>
         </div>
 
-        <p className="text-center text-xs text-gray-500">
-          © {new Date().getFullYear()} Loyal Platter. Created with passion for
-          exquisite taste.
-        </p>
+        {/* Divider */}
+        <div className="border-t border-white/10 mt-14 pt-8 text-center">
+          <p className="text-xs text-neutral-500 tracking-wide">
+            © {new Date().getFullYear()} Loyal Platter. Crafted for
+            unforgettable dining.
+          </p>
+        </div>
       </div>
     </footer>
   );

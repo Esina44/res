@@ -27,18 +27,25 @@ export default function FeaturedMenu() {
   ];
 
   return (
-    <section className="section-padding">
-      <div className="container">
-        <div className="text-center mb-16 px-4">
-          <h4 className="uppercase tracking-widest text-primary mb-2">
+    <section className="py-24 md:py-32 bg-black text-white">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h4 className="uppercase tracking-[0.3em] text-[#c5a059] text-sm mb-4">
             Our Selection
           </h4>
-          <h2 className="text-4xl md:text-5xl font-serif">Signature Dishes</h2>
+
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif">
+            Signature Dishes
+          </h2>
+
+          <div className="w-24 h-px bg-[#c5a059] mx-auto mt-6 opacity-60" />
         </div>
 
+        {/* Card Section — unchanged */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {dishes.map((dish, idx) => (
-            <div key={idx} className="glass-card overflow-hidden group">
+            <div key={idx} className="glass-card overflow-hidden group ">
               <div className="relative h-72 overflow-hidden">
                 <img
                   src={dish.image}
@@ -64,8 +71,17 @@ export default function FeaturedMenu() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <a href="/menu" className="btn-outline">
+        {/* CTA */}
+        <div className="text-center">
+          <a
+            href="/menu"
+            className="inline-block px-12 py-4 rounded-full font-semibold tracking-wide
+                       border border-[#c5a059] text-[#c5a059]
+                       transition-all duration-300
+                       hover:bg-[#c5a059] hover:text-black
+                       hover:shadow-[0_0_30px_rgba(197,160,89,0.35)]
+                       active:scale-95"
+          >
             VIEW FULL MENU
           </a>
         </div>

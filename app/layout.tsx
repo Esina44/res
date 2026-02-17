@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Loyal Platter | Exquisite Restaurant & Fine Dining",
+  title: "Loyal Platter ",
   description:
     "Experience the pinnacle of fine dining with Loyal Platter. Explore our signature dishes and book your table today.",
 };
@@ -29,7 +29,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <Navbar />
-        <div className="h-[110px]" />
         <main>{children}</main>
         <Footer />
       </body>
