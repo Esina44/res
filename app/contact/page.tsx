@@ -117,8 +117,8 @@ export default function Contact() {
               <div>
                 <h1 className="text-xs mb-2 text-gray-400">EMAIL ADDRESS</h1>
                 <input
-                  type="text"
-                  placeholder="Esina"
+                  type="email"
+                  placeholder="example@gmail.com"
                   className="w-full bg-black border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c5a059] transition"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function Contact() {
               <h1 className="text-xs mb-2 text-gray-400">SUBJECT</h1>
               <input
                 type="text"
-                placeholder="Esina"
+                placeholder="text"
                 className="w-full bg-black border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c5a059] transition"
               />
             </div>

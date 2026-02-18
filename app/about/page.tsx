@@ -1,26 +1,34 @@
 export default function About() {
   return (
     <>
-      <section className="pt-25">
-        <div className="bg-black h-[450px] flex flex-col justify-center items-center">
-          <h1 className="text-9xl text-center text-white">
+      <section className="pt-20 sm:pt-24 md:pt-25">
+        <div className="bg-black h-[350px] sm:h-[400px] md:h-[450px] flex flex-col justify-center items-center px-4">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl text-center text-white">
             About <span className="italic text-[#c5a059]">Us</span>
           </h1>
-          <p className=" text-center max-w-2xl text-gray-300">
+          <p className="text-center max-w-2xl text-gray-300 text-sm sm:text-base">
             We serve thoughtfully crafted dishes made from quality ingredients,
             blending authentic flavors with modern taste in a warm, welcoming
             space.
           </p>
         </div>
+
         <hr className="text-[#c5a059]" />
-        <div className="w-full bg-black p-20 grid grid-cols-2 gap-2 justify-center items-center">
-          <img src="about.jpg" alt="aboutimg" height={300} width={700} />
+
+        <div className="w-full bg-black px-4 py-12 sm:p-16 md:p-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <img
+            src="about.jpg"
+            alt="aboutimg"
+            className="w-full h-auto rounded-2xl"
+          />
+
           <div className="flex flex-col">
-            <h1 className="text-white text-6 text-4xl font-bold text-center">
+            <h1 className="text-white text-3xl sm:text-4xl font-bold text-center">
               The Royal{" "}
               <span className="text-[#c5a059] italic">Experience</span>
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-center text-gray-300 text-lg leading-relaxed px-4">
+
+            <p className="max-w-4xl mx-auto mt-6 text-center text-gray-300 text-base sm:text-lg leading-relaxed px-2 sm:px-4">
               Welcome to Royal Platter Restaurant — a place where elegance,
               flavor, and hospitality come together. We created this space to
               offer more than just a meal; we offer an experience that delights
@@ -37,13 +45,16 @@ export default function About() {
             </p>
           </div>
         </div>
+
         <hr className="text-[#c5a059]" />
-        <div className="w-full bg-black p-20 grid grid-cols-2 gap-4 justify-center items-center">
-          <div className="flex flex-col">
-            <h1 className="text-white text-6 text-4xl font-bold text-center">
-              Crafting <span className="text-[#c5a059] italic">Meories</span>
+
+        <div className="w-full bg-black px-4 py-12 sm:p-16 md:p-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="flex flex-col order-2 md:order-1">
+            <h1 className="text-white text-3xl sm:text-4xl font-bold text-center">
+              Crafting <span className="text-[#c5a059] italic">Memories</span>
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-center text-gray-300 text-lg leading-relaxed px-4">
+
+            <p className="max-w-4xl mx-auto mt-6 text-center text-gray-300 text-base sm:text-lg leading-relaxed px-2 sm:px-4">
               At Royal Platter Restaurant, every detail is designed to make your
               visit unforgettable. From the carefully curated menu to our
               inviting décor and attentive service, we aim to create moments
@@ -55,18 +66,22 @@ export default function About() {
               and elegance meet.
             </p>
           </div>
+
           <img
             src="people2.jpg"
             alt="aboutimg"
-            height={300}
-            width={800}
-            className="rounded-2xl"
+            className="w-full h-auto rounded-2xl order-1 md:order-2"
           />
         </div>
+
         <hr className="text-[#c5a059]" />
-        <div className="py-16 bg-[#c5a059] text-black  flex flex-col justify-center">
-          <h1 className="text-6xl text-center font-bold mb-8 ">Our Places</h1>
-          <ul className="max-w-3xl mx-auto space-y-4 text-center ">
+
+        <div className="py-12 sm:py-16 px-4 bg-[#c5a059] text-black flex flex-col justify-center">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl text-center font-bold mb-8">
+            Our Places
+          </h1>
+
+          <ul className="max-w-3xl mx-auto space-y-3 sm:space-y-4 text-center text-sm sm:text-base">
             <li>Royal Platter Downtown – 123 Main Street, Pokhara</li>
             <li>Royal Platter Riverside – 456 River Road, Kathmandu</li>
             <li>Royal Platter Uptown – 789 High Street, Chitwan</li>

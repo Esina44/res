@@ -52,7 +52,7 @@ export default function Reservation() {
               </h1>
               <input
                 type="text"
-                placeholder="Esina"
+                placeholder="Pun"
                 className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
               />
             </div>
@@ -86,7 +86,7 @@ export default function Reservation() {
             <input
               type="number"
               placeholder="Number of Guests"
-              min={0}
+              min={1}
               className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
             />
           </div>
@@ -111,7 +111,7 @@ export default function Reservation() {
               />
             </div>
           </div>
-          <button className="w-full bg-[#c5a059] py-4 rounded-xl text-black font-semibold tracking-wide hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition duration-300">
+          <button className="w-full bg-[#c5a059] py-4 rounded-xl text-black font-semibold tracking-wide hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition duration-300 cursor-pointer">
             BOOK NOW
           </button>
         </form>
