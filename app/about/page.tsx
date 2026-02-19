@@ -24,7 +24,7 @@ export default function About() {
 
           <div className="flex flex-col">
             <h1 className="text-white text-3xl sm:text-4xl font-bold text-center">
-              The Royal{" "}
+              The Royal
               <span className="text-[#c5a059] italic">Experience</span>
             </h1>
 
@@ -85,7 +85,7 @@ export default function About() {
             <li>Royal Platter Downtown – 123 Main Street, Pokhara</li>
             <li>Royal Platter Riverside – 456 River Road, Kathmandu</li>
             <li>Royal Platter Uptown – 789 High Street, Chitwan</li>
-            <li>Royal Platter Airport – Terminal 1, Annapurna</li>
+            <li>Royal Platter Airport – Terminal 1, Tribhuwan</li>
           </ul>
         </div>
       </section>
