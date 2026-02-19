@@ -151,17 +151,6 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-
-        <div className="mt-auto p-8 text-center border-t border-white/10 opacity-50">
-          <p className="text-white text-xs tracking-widest uppercase mb-4">
-            Established 1998
-          </p>
-          <div className="flex justify-center gap-6">
-            <span className="text-white text-xs font-bold">IG</span>
-            <span className="text-white text-xs font-bold">FB</span>
-            <span className="text-white text-xs font-bold">TW</span>
-          </div>
-        </div>
       </div>
     </>
   );

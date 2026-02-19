@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Montserrat } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const monst = Montserrat({
   subsets: ["latin"],
 });
 
@@ -27,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
