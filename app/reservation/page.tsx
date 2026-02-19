@@ -2,127 +2,117 @@ import { MoveDown } from "lucide-react";
 
 export default function Reservation() {
   return (
-    <>
-      <section className="bg-black text-white ">
-        <div className="bg-black min-h-[420px] flex flex-col justify-center mt-6 items-center text-center px-6">
-          <h1 className="text-5xl md:text-8xl font-bold text-white uppercase">
-            Book <span className="text-[#c5a059] italic">Now</span>
-          </h1>
-          <p className="text-center max-w-2xl text-gray-400 mt-6 text-sm md:text-base leading-relaxed">
-            Reserve your table and enjoy an unforgettable dining experience.
-            Whether it’s a cozy dinner, a family gathering, or a special
-            celebration, we’re ready to welcome you with exceptional service and
-            flavors crafted to delight.
-          </p>
-          <div className="text-6xl">
-            <MoveDown className="text-[#c5a059]" />
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center ">
-          <p className="text-2xl max-w-xl text-center text-[#c5a059]">
-            In order to secure your reservation we kindly request to deposite of
-            Rs1000
-          </p>
-          <h1 className="text-sm mt-3 text-gray-400">
-            This deposite serves as a conformation of your booking and will be
-            deducted from your final bill.
-          </h1>
-        </div>
-        <form className="max-w-2xl mx-auto mt-10 p-10 rounded-2xl border border-[#c5a059]/40  shadow-2xl space-y-4">
-          <p className="text-center text-gray-400 text-sm md:text-base leading-relaxed max-w-lg mx-auto">
-            Once you have completed the form below with the necessary details,
-            you will be automatically redirected to our secure payment window.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-                NAME
-              </h1>
-              <input
-                type="text"
-                placeholder="Esina"
-                className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
-              />
-            </div>
-
-            <div>
-              <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-                SURNAME
-              </h1>
-              <input
-                type="text"
-                placeholder="Pun"
-                className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
-              />
-            </div>
-          </div>
-
-          <div>
-            <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-              PHONE
-            </h1>
-            <input
-              type="tel"
-              placeholder="+977 9872637264"
-              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
-            />
-          </div>
-
-          <div>
-            <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-              EMAIL ADDRESS
-            </h1>
-            <input
-              type="email"
-              placeholder="example@gmail.com"
-              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
-            />
-          </div>
-          <div>
-            <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-              GUESTS
-            </h1>
-            <input
-              type="number"
-              placeholder="Number of Guests"
-              min={1}
-              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition"
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-                DATE
-              </h1>
-              <input
-                type="date"
-                className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition cursor-pointer"
-              />
-            </div>
-
-            <div>
-              <h1 className="text-xs mb-2 text-[#c5a059] tracking-wider">
-                TIME
-              </h1>
-              <input
-                type="time"
-                className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50 transition cursor-pointer"
-              />
-            </div>
-          </div>
-          <button className="w-full bg-[#c5a059] py-4 rounded-xl text-black font-semibold tracking-wide hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition duration-300 cursor-pointer">
-            BOOK NOW
-          </button>
-        </form>
-        <h1 className="mx-auto text-center mt-2 text-[#c5a059]">
-          Thank You For Choosing Us!
+    <section className="bg-black text-white px-4 sm:px-6 mt-10">
+      <div className="min-h-[320px] sm:min-h-[420px] flex flex-col justify-center items-center text-center mt-4 sm:mt-6">
+        <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold uppercase">
+          Book <span className="text-[#c5a059] italic">Now</span>
         </h1>
-        <p className="uppercase mx-auto text-center mt-20 text-[#c5a059] pb-2">
-          Please note that the deposite is non-refundable in case of
-          cancellation or no-show
+
+        <p className="max-w-2xl text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base leading-relaxed">
+          Reserve your table and enjoy an unforgettable dining experience.
+          Whether it’s a cozy dinner, a family gathering, or a special
+          celebration, we’re ready to welcome you with exceptional service.
         </p>
-      </section>
-    </>
+
+        <MoveDown className="text-[#c5a059] text-4xl sm:text-6xl mt-4" />
+      </div>
+
+      <div className="flex flex-col items-center justify-center text-center px-2">
+        <p className="text-lg sm:text-2xl max-w-xl text-[#c5a059]">
+          To secure your reservation, a deposit of Rs 1000 is required.
+        </p>
+
+        <p className="text-xs sm:text-sm mt-2 sm:mt-3 text-gray-400 max-w-md">
+          This deposit confirms your booking and will be deducted from your
+          final bill.
+        </p>
+      </div>
+
+      <form className="max-w-2xl mx-auto mt-8 sm:mt-10 p-6 sm:p-10 rounded-2xl border border-[#c5a059]/40 shadow-2xl space-y-4">
+        <p className="text-center text-gray-400 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
+          After submitting the form, you will be redirected to secure payment.
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+          <div>
+            <p className="text-xs mb-2 text-[#c5a059] tracking-wider">NAME</p>
+            <input
+              type="text"
+              placeholder="Esina"
+              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+            />
+          </div>
+
+          <div>
+            <p className="text-xs mb-2 text-[#c5a059] tracking-wider">
+              SURNAME
+            </p>
+            <input
+              type="text"
+              placeholder="Pun"
+              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+            />
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs mb-2 text-[#c5a059] tracking-wider">PHONE</p>
+          <input
+            type="tel"
+            placeholder="+977 98XXXXXXXX"
+            className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+          />
+        </div>
+
+        <div>
+          <p className="text-xs mb-2 text-[#c5a059] tracking-wider">EMAIL</p>
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+          />
+        </div>
+
+        <div>
+          <p className="text-xs mb-2 text-[#c5a059] tracking-wider">GUESTS</p>
+          <input
+            type="number"
+            min={1}
+            placeholder="Number of Guests"
+            className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+          />
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+          <div>
+            <p className="text-xs mb-2 text-[#c5a059] tracking-wider">DATE</p>
+            <input
+              type="date"
+              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+            />
+          </div>
+
+          <div>
+            <p className="text-xs mb-2 text-[#c5a059] tracking-wider">TIME</p>
+            <input
+              type="time"
+              className="w-full bg-black border border-[#c5a059] rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-[#c5a059]/50"
+            />
+          </div>
+        </div>
+
+        <button className="w-full bg-[#c5a059] py-3 sm:py-4 rounded-xl text-black font-semibold tracking-wide hover:opacity-90 transition">
+          BOOK NOW
+        </button>
+      </form>
+
+      <p className="text-center mt-4 text-[#c5a059] text-sm">
+        Thank You For Choosing Us!
+      </p>
+
+      <p className="uppercase text-center mt-12 sm:mt-20 text-[#c5a059] text-xs sm:text-sm pb-4">
+        Deposit is non-refundable in case of cancellation or no-show.
+      </p>
+    </section>
   );
 }
